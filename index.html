@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Eventos Acadêmicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Eventos Acadêmicos</h1>
+        <p>Cadastre e consulte eventos da instituição</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Cadastrar novo evento</h2>
+
+            <form id="formEvento">
+                <input type="text" id="titulo" placeholder="Título do evento" required>
+                <textarea id="descricao" placeholder="Descrição do evento"></textarea>
+                <input type="date" id="data_evento" required>
+                <input type="text" id="local" placeholder="Local do evento" required>
+                <button type="submit">Cadastrar evento</button>
+            </form>
+
+            <p id="mensagem"></p>
+        </section>
+
+        <section class="eventos">
+            <h2>Eventos cadastrados</h2>
+            <div id="listaEventos">Carregando eventos...</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
